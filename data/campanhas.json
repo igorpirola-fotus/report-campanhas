@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "periodo": "Março 2026",
+    "atualizadoEm": "20/03/2026",
+    "resumoDiretoria": "Das 4 campanhas ativas em março, 3 estão abaixo da meta — Recompra a 11% do alvo, 1ª Compra e Resgate360 com conversão inferior a 1% — enquanto o Híbrido é o único no verde (111%). O maior risco é operacional: quase metade da base comercializável ainda não foi acionada, o que representa receita dentro do próprio mês ainda acessível. Para virar o jogo no fechamento, a prioridade é ampliar a cobertura da base e alinhar o CRM com a plataforma — há divergências que podem estar escondendo resultados reais do time.",
+    "alertaDivergencia": "Na 1ª Compra, a plataforma indica mais vendas do que o CRM registra; no Resgate360, o inverso — o CRM registra mais do que a plataforma. Revisar cards marcados incorretamente antes de usar os dados como base de decisão."
+  },
+  "campanhas": [
+    {
+      "id": "pc",
+      "nome": "1ª Compra",
+      "alias": "MAR_PRIMEIRACOMPRA",
+      "status": "critico",
+      "kpiPrincipal": "0,4%",
+      "kpiLabel": "conversão · meta 1,2%",
+      "barPct": 33,
+      "rodape1Label": "vendas",
+      "rodape1Valor": "19",
+      "rodape2Label": "não tratados (46%)",
+      "rodape2Valor": "2.081"
+    },
+    {
+      "id": "rc",
+      "nome": "Recompra",
+      "alias": "MAR_RECOMPRA",
+      "status": "critico",
+      "kpiPrincipal": "11%",
+      "kpiLabel": "atingimento · meta 52,5%",
+      "barPct": 11,
+      "rodape1Label": "recompras",
+      "rodape1Valor": "77",
+      "rodape2Label": "meta",
+      "rodape2Valor": "711"
+    },
+    {
+      "id": "hb",
+      "nome": "Híbrido",
+      "alias": "MAR_HIBRIDO",
+      "status": "verde",
+      "kpiPrincipal": "111%",
+      "kpiLabel": "da meta atingida",
+      "barPct": 100,
+      "rodape1Label": "conversões",
+      "rodape1Valor": "52",
+      "rodape2Label": "meta",
+      "rodape2Valor": "47"
+    },
+    {
+      "id": "rs",
+      "nome": "Resgate 360",
+      "alias": "MAR_RESGATE360",
+      "status": "critico",
+      "kpiPrincipal": "0,8%",
+      "kpiLabel": "conversão · meta 1,5%",
+      "barPct": 53,
+      "rodape1Label": "vendas",
+      "rodape1Valor": "13",
+      "rodape2Label": "não tratados (52%)",
+      "rodape2Valor": "850"
+    }
+  ],
+  "tabelas": {
+    "pc": {
+      "colunas": ["Equipe","Base","Não Tratado","% NT","Em Contato","% EC","Orçamentos","% Orc","Vendas","Conv. %"],
+      "linhas": [
+        ["KEY ACCOUNT","69","0","0%","66","96%","0","0.0%","3","4.3%"],
+        ["NE EIXO NORTE","284","87","31%","189","67%","7","2.5%","0","0%"],
+        ["NE EIXO SUL","306","92","30%","202","66%","11","3.6%","1","0.3%"],
+        ["NORTE","512","325","63%","183","36%","2","0.4%","1","0.2%"],
+        ["NOVOS PRODUTOS","82","4","5%","76","93%","2","2.4%","0","0%"],
+        ["SAO PAULO","567","176","31%","382","67%","5","0.9%","1","0.2%"],
+        ["SEM COORD.","34","22","65%","12","35%","0","0.0%","0","0%"],
+        ["SUDOESTE","353","153","43%","191","54%","5","1.4%","3","0.8%"],
+        ["SUL","390","152","39%","223","57%","15","3.8%","0","0%"],
+        ["CANAIS SDR|BDR","1769","908","51%","648","37%","203","11.5%","10","0.6%"],
+        ["TOTAL GERAL","4528","2081","46%","2172","48%","250","5.5%","19","0.4%"]
+      ],
+      "heatCols": {"2":"nt","3":"nt","4":"ec","5":"ec","8":"conv","9":"conv"}
+    },
+    "rc": {
+      "colunas": ["Regional","Base","Convertidos","Tx. Conv. Real","Meta Tx. Conv.","Meta # Conv.","Var. Real × Meta"],
+      "linhas": [
+        ["CANAIS SDR|BDR","8315","5","0.10%","0.41%","34","15%"],
+        ["KEY ACCOUNT","57","0","0.00%","2.25%","1","0%"],
+        ["NE EIXO NORTE","262","0","0.00%","6.41%","17","0%"],
+        ["NE EIXO SUL","278","5","1.80%","8.09%","22","22%"],
+        ["NORTE","520","2","0.40%","4.18%","22","9%"],
+        ["NOVOS PRODUTOS","79","1","1.30%","1.59%","1","80%"],
+        ["SAO PAULO","561","3","0.50%","1.97%","11","27%"],
+        ["SUDOESTE","361","7","1.90%","7.02%","25","28%"],
+        ["SUL","381","0","0.00%","2.89%","11","0%"],
+        ["TOTAL GERAL","10900","23","0.20%","1.20%","131","18%"]
+      ],
+      "heatCols": {"2":"conv","3":"convPct","6":"var"}
+    },
+    "hb": {
+      "colunas": ["Equipe","Base","Conv. Real","Meta Conv.","Var. Conv. %","Desafio Meta","Desafio Real","Var. Desafio %"],
+      "linhas": [
+        ["CANAIS SDR|BDR","50","2","1","201%","2","2","94%"],
+        ["KEY ACCOUNT","93","0","2","0%","4","0","0%"],
+        ["NE EIXO NORTE","460","1","9","11%","20","1","5%"],
+        ["NE EIXO SUL","399","11","8","138%","17","12","70%"],
+        ["NORTE","289","10","6","173%","12","15","121%"],
+        ["NOVOS PRODUTOS","22","3","0","688%","1","6","640%"],
+        ["SAO PAULO","257","6","5","117%","11","6","54%"],
+        ["SEM COORD.","112","3","2","0%","5","0","0%"],
+        ["SUDOESTE","447","15","9","168%","19","19","99%"],
+        ["SUL","199","4","4","100%","9","5","58%"],
+        ["TOTAL GERAL","2327","52","47","111%","100","66","66%"]
+      ],
+      "heatCols": {"4":"varHb","7":"varHb"}
+    },
+    "rs": {
+      "colunas": ["Equipe","Base","Não Tratado","% NT","Em Contato","% EC","Orçamentos","% Orc","Vendas","Conv. %"],
+      "linhas": [
+        ["KEY ACCOUNT","16","0","0%","16","100%","0","0.0%","0","0%"],
+        ["NE EIXO NORTE","193","65","34%","123","64%","2","1.0%","2","1.0%"],
+        ["NE EIXO SUL","220","24","11%","184","84%","5","2.3%","7","3.2%"],
+        ["NORTE","131","82","63%","43","33%","6","4.6%","0","0%"],
+        ["NOVOS PRODUTOS","25","8","32%","15","60%","2","8.0%","0","0%"],
+        ["SAO PAULO","119","40","34%","77","65%","1","0.8%","0","0%"],
+        ["SEM COORD.","429","429","100%","0","0%","0","0.0%","0","0%"],
+        ["SUDOESTE","279","109","39%","156","56%","11","3.9%","2","0.7%"],
+        ["SUL","72","26","36%","44","61%","1","1.4%","1","1.4%"],
+        ["CANAIS SDR|BDR","137","57","42%","60","44%","19","13.9%","1","0.7%"],
+        ["TOTAL GERAL","1631","850","52%","718","44%","47","2.9%","13","0.8%"]
+      ],
+      "heatCols": {"2":"nt","3":"nt","4":"ec","5":"ec","8":"conv","9":"conv"}
+    }
+  }
+}
