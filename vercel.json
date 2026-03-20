@@ -1,15 +1,7 @@
 {
   "version": 2,
-  "name": "report-campanhas-fotus",
-  "public": true,
-  "builds": [
-    { "src": "public/**", "use": "@vercel/static" },
-    { "src": "api/*.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/data/(.*)", "headers": {"cache-control": "no-cache"}, "dest": "/data/$1" },
-    { "src": "/admin", "dest": "/public/admin.html" },
-    { "src": "/", "dest": "/public/index.html" }
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/admin", "destination": "/admin.html" }
   ]
 }
